@@ -18,7 +18,7 @@ For bare React Native projects, you must ensure that you have [installed and con
 ### Add the package to your npm dependencies
 
 ```
-npm install with-image-crop-picker
+npm install with-rn-image-crop-picker
 ```
 
 
