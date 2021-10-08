@@ -11,10 +11,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "files": [
-    "app.plugin.js",
-    "/build"
-  ],
   "license": "MIT",
   "private": false,
   "main": "app.plugin.js",
