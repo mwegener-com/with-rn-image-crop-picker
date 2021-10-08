@@ -25,16 +25,12 @@
     "expo-module": "expo-module"
   },
   "dependencies": {
-    "@expo/config-plugins": "^4.0.2",
-    "@jimp/plugin-displace": "^0.16.1"
+    "@expo/config-plugins": "^3.0.6"
   },
   "devDependencies": {
-    "@expo/config-types": "^43.0.0",
     "@types/jest": "^26.0.23",
     "eslint": "^7.26.0",
     "expo-module-scripts": "^2.0.0",
-    "prettier": "^2.3.0",
-    "@jimp/plugin-displace": "^0.16.1"
-
+    "prettier": "^2.3.0"
   }
 }
