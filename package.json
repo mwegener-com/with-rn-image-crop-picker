@@ -13,7 +13,7 @@
   },
   "files": [
     "app.plugin.js",
-    "plugin/build"
+    "/build"
   ],
   "license": "MIT",
   "private": false,
