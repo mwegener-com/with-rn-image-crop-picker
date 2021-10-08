@@ -1,21 +1,7 @@
 {
-  "name": "with-rn-image-crop-picker",
-  "version": "0.0.1",
-  "homepage": "https://github.com/mwegener-com/with-rn-image-crop-picker#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mwegener-com/with-rn-image-crop-picker.git"
+  "devDependencies": {
+    "expo-module-scripts": "^2.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/mwegener-com/with-rn-image-crop-picker/issues"
-  },
-  "files": [
-    "app.plugin.js",
-    "plugin/build"
-  ],
-  "license": "MIT",
-  "private": false,
-  "main": "app.plugin.js",
   "scripts": {
     "build": "expo-module build",
     "clean": "expo-module clean",
@@ -23,14 +9,5 @@
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module"
-  },
-  "dependencies": {
-    "@expo/config-plugins": "^3.0.6"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "eslint": "^7.26.0",
-    "expo-module-scripts": "^2.0.0",
-    "prettier": "^2.3.0"
   }
 }
