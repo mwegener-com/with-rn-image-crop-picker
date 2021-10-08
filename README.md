@@ -1,11 +1,11 @@
-# with-image-crop-picker
+# with-rn-image-crop-picker
 
 Put a description of your Unimodule here
 
 # API documentation
 
-- [Documentation for the master branch](https://github.com/expo/expo/blob/master/docs/pages/versions/unversioned/sdk/with-image-crop-picker.md)
-- [Documentation for the latest stable release](https://docs.expo.io/versions/latest/sdk/with-image-crop-picker/)
+- [Documentation for the master branch](https://github.com/expo/expo/blob/master/docs/pages/versions/unversioned/sdk/with-rn-image-crop-picker.md)
+- [Documentation for the latest stable release](https://docs.expo.io/versions/latest/sdk/with-rn-image-crop-picker/)
 
 # Installation in managed Expo projects
 

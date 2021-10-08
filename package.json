@@ -1,4 +1,20 @@
 {
+  "name": "with-rn-image-crop-picker",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mwegener-com/with-rn-image-crop-picker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwegener-com/with-rn-image-crop-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwegener-com/with-rn-image-crop-picker/issues"
+  },
+  "files": [
+    "app.plugin.js"
+  ],
+  "license": "MIT",
+  "private": false,
+  "main": "app.plugin.js",
   "devDependencies": {
     "expo-module-scripts": "^2.0.0"
   },
