@@ -2,18 +2,24 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.withImageCropPicker = void 0;
 const config_plugins_1 = require("@expo/config-plugins");
-const withImageCropPicker = (config, { PhotoLibraryUsageDescription, CameraUsageDescription, MicrophoneUsageDescription, } = {}) => {
-    const photoDescription = PhotoLibraryUsageDescription ||
-        "Allow $(PRODUCT_NAME) to access your photo library";
-    const CameraDescription = CameraUsageDescription || "Allow $(PRODUCT_NAME) to access your camera";
-    const MicrophoneDescription = MicrophoneUsageDescription ||
-        "Allow $(PRODUCT_NAME) to access your microphone";
-    return (0, config_plugins_1.withInfoPlist)(config, (config) => {
-        config.modResults.NSPhotoLibraryUsageDescription = photoDescription;
-        config.modResults.NSCameraUsageDescription = CameraDescription;
-        config.modResults.NSMicrophoneUsageDescription = MicrophoneDescription;
-        return config;
-    });
+const withUpdateAndroidManifest_1 = require("./android/withUpdateAndroidManifest");
+const withUpdateAppBuildGradle_1 = require("./android/withUpdateAppBuildGradle");
+const withUpdateProjectBuildGradle_1 = require("./android/withUpdateProjectBuildGradle");
+const withUpdateInfoPlist_1 = require("./ios/withUpdateInfoPlist");
+const withImageCropPicker = (config, { PhotoLibraryUsageDescription, CameraUsageDescription, MicrophoneUsageDescription } = {}) => {
+    return (0, config_plugins_1.withPlugins)(config, [
+        [
+            withUpdateInfoPlist_1.withUpdateInfoPlist,
+            {
+                photolibText: PhotoLibraryUsageDescription,
+                cameraText: CameraUsageDescription,
+                microText: MicrophoneUsageDescription,
+            },
+        ],
+        withUpdateProjectBuildGradle_1.withUpdateProjectBuildGradle,
+        withUpdateAppBuildGradle_1.withUpdateAppBuildGradle,
+        withUpdateAndroidManifest_1.withUpdateAndroidManifest,
+    ]);
 };
 exports.withImageCropPicker = withImageCropPicker;
 exports.default = exports.withImageCropPicker;
