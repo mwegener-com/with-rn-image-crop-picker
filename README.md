@@ -37,16 +37,16 @@ You can configure the iOS messages by adding the following props:
 Example:
 
 ```javascript
-	"plugins": [
-			[
-				"with-rn-image-crop-picker",
-				{
-					"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
-					"CameraUsageDescription": "Allow app XYZ to access your camera",
-          "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
-				}
-			]
-		],
+"plugins": [
+		[
+			"with-rn-image-crop-picker",
+			{
+				"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
+				"CameraUsageDescription": "Allow app XYZ to access your camera",
+        "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
+			}
+		]
+	],
 ```
 
 # Contributing
