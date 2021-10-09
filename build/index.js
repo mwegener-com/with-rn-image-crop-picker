@@ -5,11 +5,11 @@ const config_plugins_1 = require("@expo/config-plugins");
 const withImageCropPicker = (config) => {
     return (0, config_plugins_1.withInfoPlist)(config, (config) => {
         config.modResults.NSPhotoLibraryUsageDescription =
-            "Diese App benötigt Zugriff auf deine Fotos";
+            "Allow $(PRODUCT_NAME) to access your photo library";
         config.modResults.NSCameraUsageDescription =
-            "Diese App benötigt Zugriff auf deine Kamera";
+            "Allow $(PRODUCT_NAME) to access your camera";
         config.modResults.NSMicrophoneUsageDescription =
-            "Diese App benötigt Zugriff auf dein Mikrofon";
+            "Allow $(PRODUCT_NAME) to access your microphone";
         return config;
     });
 };
