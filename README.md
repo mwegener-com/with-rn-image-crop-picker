@@ -1,9 +1,16 @@
 # with-rn-image-crop-picker
 
-Expo config plugin for react-native-image-crop-picker.
-Requires Expo Dev Client
+[Expo config plugin](https://docs.expo.io/guides/config-plugins) for [react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker).
 
-# Usage
+### Warning
+Only supports iOS right now.
+
+Requires Expo Dev Client. 
+Learn more about: 
+- Expo Managed Workflow in 2021: [part 1](https://blog.expo.io/expo-managed-workflow-in-2021-5b887bbf7dbb), [part 2](https://blog.expo.io/expo-managed-workflow-in-2021-d1c9b68aa10)
+- [Expo Dev Client Docs](https://docs.expo.dev/clients/getting-started/)
+
+## Usage
 
 1. Install with Expo
 
@@ -26,7 +33,7 @@ $ expo prebuild
 $ expo run:ios --device
 ```
 
-# Configuartion
+## Configuartion
 
 You can configure the iOS messages by adding the following props to your app.json file:
 
@@ -48,6 +55,6 @@ Example:
 ]
 ```
 
-# Contributing
+## Contributing
 
 Contributions are very welcome!
