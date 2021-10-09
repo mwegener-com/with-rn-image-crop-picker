@@ -65,4 +65,4 @@ Contributions are very welcome!
 
 ## Support
 
-[Buy me a coffee](buymeacoffee.com/mwegener)
+[Buy me a coffee](https://buymeacoffee.com/mwegener)
