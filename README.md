@@ -2,12 +2,15 @@
 
 Expo config plugin for [react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker).
 
-This plugin adds the required attributes to the specific files as mention in the [docs](https://github.com/ivpusic/react-native-image-crop-picker#step-3)
+This plugin adds the required attributes to the specific files as mentioned in the [docs.](https://github.com/ivpusic/react-native-image-crop-picker#step-3)
 
-- iOS InfoPlist: `NSPhotoLibraryUsageDescription`, `NSCameraUsageDescription`, `NSMicrophoneUsageDescription`
-- AndroidManifest: `<uses-permission android:name="android.permission.CAMERA"/>`
-- Android Project build.gradle: `maven { url 'https://maven.google.com' }` and `maven { url "https://www.jitpack.io" }`
-- Android: App build.gradle `vectorDrawables.useSupportLibrary = true`
+##### iOS 
+InfoPlist: `NSPhotoLibraryUsageDescription`, `NSCameraUsageDescription`, `NSMicrophoneUsageDescription`
+
+##### Android:
+AndroidManifest: `<uses-permission android:name="android.permission.CAMERA"/>`
+Project build.gradle: `maven { url 'https://maven.google.com' }` and `maven { url "https://www.jitpack.io" }`
+App build.gradle `vectorDrawables.useSupportLibrary = true`
 
 Currently there is no support for front-camera.
 
