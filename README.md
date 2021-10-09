@@ -23,7 +23,7 @@ npm install with-rn-image-crop-picker
 
 ```
 $ expo prebuild
-$ expo run:ios --devive
+$ expo run:ios --device
 ```
 
 # Configuartion
@@ -36,7 +36,7 @@ You can configure the iOS messages by adding the following props:
 
 Example:
 
-```
+```javascript
 	"plugins": [
 			[
 				"with-rn-image-crop-picker",
