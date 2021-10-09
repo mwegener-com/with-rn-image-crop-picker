@@ -5,13 +5,13 @@ Requires Expo Dev Client
 
 # Usage
 
-1. Install from NPM
+1. Install with Expo
 
 ```sh
-$ npm install with-rn-image-crop-picker
+$ expo install with-rn-image-crop-picker
 ```
 
-2. Add to app.json
+2. Check your app.json. It should look like this:
 
 ```json
  "plugins": [
@@ -28,7 +28,7 @@ $ expo run:ios --device
 
 # Configuartion
 
-You can configure the iOS messages by adding the following props in your app.json:
+You can configure the iOS messages by adding the following props to your app.json file:
 
 - PhotoLibraryUsageDescription
 - CameraUsageDescription
