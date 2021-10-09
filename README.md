@@ -65,4 +65,4 @@ Contributions are very welcome!
 
 ## Support
 
-[Buy me a coffee](https://buymeacoffee.com/mwegener)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mwegener)
