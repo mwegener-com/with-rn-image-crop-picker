@@ -26,6 +26,29 @@ $ expo prebuild
 $ expo run:ios --devive
 ```
 
+# Configuartion
+
+You can configure the iOS messages by adding the following props:
+
+- PhotoLibraryUsageDescription
+- CameraUsageDescription
+- MicrophoneUsageDescription
+
+Example:
+
+```
+	"plugins": [
+			[
+				"with-rn-image-crop-picker",
+				{
+					"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
+					"CameraUsageDescription": "Allow app XYZ to access your camera",
+          "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
+				}
+			]
+		],
+```
+
 # Contributing
 
-Contributions are very welcome!.
+Contributions are very welcome!

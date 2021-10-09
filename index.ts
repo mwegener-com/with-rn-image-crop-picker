@@ -1,13 +1,32 @@
 import { ConfigPlugin, withInfoPlist } from "@expo/config-plugins";
 
-export const withImageCropPicker: ConfigPlugin<string> = (config) => {
+interface PluginProps {
+  PhotoLibraryUsageDescription?: string;
+  CameraUsageDescription?: string;
+  MicrophoneUsageDescription?: string;
+}
+
+export const withImageCropPicker: ConfigPlugin<PluginProps> = (
+  config,
+  {
+    PhotoLibraryUsageDescription,
+    CameraUsageDescription,
+    MicrophoneUsageDescription,
+  } = {}
+) => {
+  const photoDescription =
+    PhotoLibraryUsageDescription ||
+    "Allow $(PRODUCT_NAME) to access your photo library";
+  const CameraDescription =
+    CameraUsageDescription || "Allow $(PRODUCT_NAME) to access your camera";
+  const MicrophoneDescription =
+    MicrophoneUsageDescription ||
+    "Allow $(PRODUCT_NAME) to access your microphone";
+
   return withInfoPlist(config, (config) => {
-    config.modResults.NSPhotoLibraryUsageDescription =
-      "Allow $(PRODUCT_NAME) to access your photo library";
-    config.modResults.NSCameraUsageDescription =
-      "Allow $(PRODUCT_NAME) to access your camera";
-    config.modResults.NSMicrophoneUsageDescription =
-      "Allow $(PRODUCT_NAME) to access your microphone";
+    config.modResults.NSPhotoLibraryUsageDescription = photoDescription;
+    config.modResults.NSCameraUsageDescription = CameraDescription;
+    config.modResults.NSMicrophoneUsageDescription = MicrophoneDescription;
 
     return config;
   });
