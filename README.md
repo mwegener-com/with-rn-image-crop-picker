@@ -8,13 +8,20 @@ This plugin adds the required attributes to the specific files as mentioned in t
 
 ### iOS
 
-InfoPlist: `NSPhotoLibraryUsageDescription`, `NSCameraUsageDescription`, `NSMicrophoneUsageDescription`
+InfoPlist:
+
+- `NSPhotoLibraryUsageDescription`
+- `NSCameraUsageDescription`
+- `NSMicrophoneUsageDescription`
 
 ### Android
 
 AndroidManifest: `<uses-permission android:name="android.permission.CAMERA"/>`
 
-Project build.gradle: `maven { url 'https://maven.google.com' }` and `maven { url "https://www.jitpack.io" }`
+Project build.gradle:
+
+- `maven { url 'https://maven.google.com' }`
+- `maven { url "https://www.jitpack.io" }`
 
 App build.gradle `vectorDrawables.useSupportLibrary = true`
 
