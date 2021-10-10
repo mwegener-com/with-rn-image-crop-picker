@@ -17,3 +17,5 @@ async function setCustomConfigAsync(
 
 	return androidManifest;
 }
+
+export default withUpdateAndroidManifest;

@@ -14,3 +14,4 @@ async function setCustomConfigAsync(config, androidManifest) {
     (0, Permissions_1.addPermission)(androidManifest, 'android.permission.CAMERA');
     return androidManifest;
 }
+exports.default = exports.withUpdateAndroidManifest;
