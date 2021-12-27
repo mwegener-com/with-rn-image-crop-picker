@@ -27,7 +27,7 @@ App build.gradle `vectorDrawables.useSupportLibrary = true`
 
 ## Important note
 
-Currently there is no support for front-camera.
+Currently there is no full support for front-camera on android.
 
 Requires Expo Dev Client in half-managed workflow.
 Learn more about:
