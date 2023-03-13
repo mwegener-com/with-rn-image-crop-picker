@@ -41,7 +41,7 @@ Learn more about:
 1. Install with Expo
 
 ```sh
-$ expo install with-rn-image-crop-picker
+$ expo install with-rn-image-crop-picker expo-build-properties
 ```
 
 2. Check your app.json. It should look like this:
@@ -50,6 +50,15 @@ $ expo install with-rn-image-crop-picker
  "plugins": [
       "with-rn-image-crop-picker"
     ],
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "compileSdkVersion": 33,
+          "targetSdkVersion": 33
+        }
+      }
+]
 ```
 
 3. Rebuild your app
