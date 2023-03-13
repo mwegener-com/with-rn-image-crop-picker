@@ -16,7 +16,9 @@ InfoPlist:
 
 ### Android
 
-AndroidManifest: `<uses-permission android:name="android.permission.CAMERA"/>`
+AndroidManifest: 
+- `<uses-permission android:name="android.permission.CAMERA"/>`
+- `<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>`
 
 Project build.gradle:
 
