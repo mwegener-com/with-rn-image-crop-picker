@@ -14,6 +14,7 @@ async function setCustomConfigAsync(
 	androidManifest: AndroidConfig.Manifest.AndroidManifest
 ): Promise<AndroidConfig.Manifest.AndroidManifest> {
 	addPermission(androidManifest, 'android.permission.CAMERA');
+	addPermission(androidManifest, 'android.permission.READ_MEDIA_IMAGES')
 
 	return androidManifest;
 }
