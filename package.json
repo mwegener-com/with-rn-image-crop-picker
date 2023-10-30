@@ -1,6 +1,7 @@
 {
 	"name": "@luccasr73/with-rn-image-crop-picker",
-	"version": "0.1.0",
+	"version": "0.1.1",
+	"main": "app.plugin.js",
 	"homepage": "https://github.com/luccasr73/with-rn-image-crop-picker#readme",
 	"repository": "https://github.com/luccasr73/with-rn-image-crop-picker.git",
 	"description": "An Expo config plugin for painless setup of `react-native-image-crop-picker`",
@@ -8,9 +9,7 @@
 	"bugs": {
 		"url": "https://github.com/luccasr73/with-rn-image-crop-picker/issues"
 	},
-	"license": "MIT",
 	"private": false,
-	"main": "app.plugin.js",
 	"devDependencies": {
 		"expo-module-scripts": "~3.0.0"
 	},
@@ -24,5 +23,10 @@
 		"prepare": "npm_config_user_agent=yarn expo-module prepare",
 		"prepublishOnly": "npm_config_user_agent=yarn  expo-module prepublishOnly",
 		"expo-module": "npm_config_user_agent=yarn expo-module"
-	}
+	},
+	"keywords": [
+		"expo",
+		"react-native"
+	],
+	"license": "MIT"
 }
