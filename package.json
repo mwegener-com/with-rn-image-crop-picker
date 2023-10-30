@@ -1,15 +1,12 @@
 {
-	"name": "with-rn-image-crop-picker",
+	"name": "@luccasr73/with-rn-image-crop-picker",
 	"version": "0.1.0",
-	"homepage": "https://github.com/mwegener-com/with-rn-image-crop-picker#readme",
-	"author": "Marius Wegener",
-	"repository": "https://github.com/mwegener-com/with-rn-image-crop-picker.git",
+	"homepage": "https://github.com/luccasr73/with-rn-image-crop-picker#readme",
+	"repository": "https://github.com/luccasr73/with-rn-image-crop-picker.git",
 	"description": "An Expo config plugin for painless setup of `react-native-image-crop-picker`",
+	"author": "Marius Wegener",
 	"bugs": {
-		"url": "https://github.com/mwegener-com/with-rn-image-crop-picker/issues"
-	},
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/"
+		"url": "https://github.com/luccasr73/with-rn-image-crop-picker/issues"
 	},
 	"license": "MIT",
 	"private": false,
@@ -25,7 +22,7 @@
 		"clean": "npm_config_user_agent=yarn expo-module clean",
 		"test": "npm_config_user_agent=yarn expo-module test",
 		"prepare": "npm_config_user_agent=yarn expo-module prepare",
-		"prepublishOnly": "npm_config_user_agent=yarn expo-module prepublishOnly",
+		"prepublishOnly": "npm_config_user_agent=yarn  expo-module prepublishOnly",
 		"expo-module": "npm_config_user_agent=yarn expo-module"
 	}
 }
