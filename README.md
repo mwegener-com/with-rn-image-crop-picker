@@ -3,7 +3,7 @@
 Expo config plugin for [react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker).
 
 ## Why a fork?
-The original https://github.com/mwegener-com/with-rn-image-crop-picker package appears to no longer be actively maintained, so I forked it to make some updates
+The original package(https://github.com/mwegener-com/with-rn-image-crop-picker) appears to no longer be actively maintained, so I forked it to make some updates
 
 ## About
 
