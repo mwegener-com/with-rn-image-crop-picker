@@ -44,14 +44,14 @@ Learn more about:
 1. Install with Expo
 
 ```sh
-$ expo install with-rn-image-crop-picker
+$ expo install @luccasr73/with-rn-image-crop-picker
 ```
 
 2. Check your app.json. It should look like this:
 
 ```json
  "plugins": [
-      "with-rn-image-crop-picker"
+      "@luccasr73/with-rn-image-crop-picker"
     ],
 ```
 
@@ -76,7 +76,7 @@ Example:
 ```json
 "plugins": [
   [
-		"with-rn-image-crop-picker",
+		"@luccasr73/with-rn-image-crop-picker",
 		{
 			"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
 			"CameraUsageDescription": "Allow app XYZ to access your camera",
