@@ -1,6 +1,6 @@
 {
 	"name": "@luccasr73/with-rn-image-crop-picker",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"main": "app.plugin.js",
 	"homepage": "https://github.com/luccasr73/with-rn-image-crop-picker#readme",
 	"repository": "https://github.com/luccasr73/with-rn-image-crop-picker.git",
@@ -11,17 +11,17 @@
 	},
 	"private": false,
 	"devDependencies": {
-		"expo-module-scripts": "~3.0.0"
+		"expo-module-scripts": "~3.4.1"
 	},
 	"dependencies": {
-		"@expo/config-plugins": "~7.2.2"
+		"@expo/config-plugins": "~7.8.4"
 	},
 	"scripts": {
 		"build": "npm_config_user_agent=yarn expo-module build",
 		"clean": "npm_config_user_agent=yarn expo-module clean",
 		"test": "npm_config_user_agent=yarn expo-module test",
 		"prepare": "npm_config_user_agent=yarn expo-module prepare",
-		"prepublishOnly": "npm_config_user_agent=yarn  expo-module prepublishOnly",
+		"prepublishOnly": "npm_config_user_agent=yarn expo-module prepublishOnly",
 		"expo-module": "npm_config_user_agent=yarn expo-module"
 	},
 	"keywords": [

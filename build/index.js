@@ -6,7 +6,7 @@ const withUpdateAndroidManifest_1 = require("./android/withUpdateAndroidManifest
 const withUpdateAppBuildGradle_1 = require("./android/withUpdateAppBuildGradle");
 const withUpdateProjectBuildGradle_1 = require("./android/withUpdateProjectBuildGradle");
 const withUpdateInfoPlist_1 = require("./ios/withUpdateInfoPlist");
-const withImageCropPicker = (config, { PhotoLibraryUsageDescription, CameraUsageDescription, MicrophoneUsageDescription } = {}) => {
+const withImageCropPicker = (config, { PhotoLibraryUsageDescription, CameraUsageDescription, MicrophoneUsageDescription, } = {}) => {
     return (0, config_plugins_1.withPlugins)(config, [
         [
             withUpdateInfoPlist_1.withUpdateInfoPlist,

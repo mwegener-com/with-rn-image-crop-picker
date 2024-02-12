@@ -3,7 +3,8 @@
 Expo config plugin for [react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker).
 
 ## Why a fork?
-The original package(https://github.com/mwegener-com/with-rn-image-crop-picker) appears to no longer be actively maintained, so I forked it to make small updates
+
+The original package(<https://github.com/mwegener-com/with-rn-image-crop-picker>) appears to no longer be actively maintained, so I forked it to make small updates
 
 ## About
 
@@ -51,9 +52,9 @@ expo install @luccasr73/with-rn-image-crop-picker
 3. Run prebuild
 
 ```sh
-$ expo prebuild
-$ expo run:ios --device
-$ expo run:android --device
+expo prebuild
+expo run:ios --device
+expo run:android --device
 ```
 
 ## Configuration
@@ -69,13 +70,13 @@ Example:
 ```json
 "plugins": [
   [
-		"@luccasr73/with-rn-image-crop-picker",
-		{
-			"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
-			"CameraUsageDescription": "Allow app XYZ to access your camera",
-			"MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
-		}
-	]
+  "@luccasr73/with-rn-image-crop-picker",
+  {
+   "PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
+   "CameraUsageDescription": "Allow app XYZ to access your camera",
+   "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
+  }
+ ]
 ]
 ```
 
