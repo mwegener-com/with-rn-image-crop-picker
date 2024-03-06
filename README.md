@@ -2,6 +2,10 @@
 
 Expo config plugin for [react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker).
 
+## Why a fork?
+
+The original package(<https://github.com/mwegener-com/with-rn-image-crop-picker>) appears to no longer be actively maintained, so I forked it to make small updates
+
 ## About
 
 This plugin adds the required attributes to the specific files as mentioned in the [docs.](https://github.com/ivpusic/react-native-image-crop-picker#step-3)
@@ -29,38 +33,31 @@ App build.gradle `vectorDrawables.useSupportLibrary = true`
 
 Currently there is no full support for front-camera on android.
 
-Requires Expo Dev Client in half-managed workflow.
-Learn more about:
-
-- Expo Managed Workflow in 2021: [part 1](https://blog.expo.io/expo-managed-workflow-in-2021-5b887bbf7dbb), [part 2](https://blog.expo.io/expo-managed-workflow-in-2021-d1c9b68aa10)
-- [Expo dev-client docs](https://docs.expo.dev/clients/getting-started/)
-- [Expo config plugin](https://docs.expo.io/guides/config-plugins)
-
 ## Usage
 
 1. Install with Expo
 
 ```sh
-$ expo install with-rn-image-crop-picker
+expo install @luccasr73/with-rn-image-crop-picker
 ```
 
 2. Check your app.json. It should look like this:
 
 ```json
  "plugins": [
-      "with-rn-image-crop-picker"
+      "@luccasr73/with-rn-image-crop-picker"
     ],
 ```
 
-3. Rebuild your app
+3. Run prebuild
 
 ```sh
-$ expo prebuild
-$ expo run:ios --device
-$ expo run:android --device
+expo prebuild
+expo run:ios --device
+expo run:android --device
 ```
 
-## Configuartion
+## Configuration
 
 You can configure the iOS messages by adding the following props to your app.json file:
 
@@ -73,13 +70,13 @@ Example:
 ```json
 "plugins": [
   [
-		"with-rn-image-crop-picker",
-		{
-			"PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
-			"CameraUsageDescription": "Allow app XYZ to access your camera",
-			"MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
-		}
-	]
+  "@luccasr73/with-rn-image-crop-picker",
+  {
+   "PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
+   "CameraUsageDescription": "Allow app XYZ to access your camera",
+   "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
+  }
+ ]
 ]
 ```
 
