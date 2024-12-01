@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "with-rn-image-crop-picker-example",
+    "slug": "with-rn-image-crop-picker-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "with-rn-image-crop-picker-example",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.luccasr73.withrnimagecroppickerexample"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.luccasr73.withrnimagecroppickerexample"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-dev-launcher",
+        {
+          "launchMode": "most-recent"
+        }
+      ],
+      [
+        "../app.plugin.js",
+        {
+          "PhotoLibraryUsageDescription": "Allow app XYZ to access your photos",
+          "CameraUsageDescription": "Allow app XYZ to access your camera",
+          "MicrophoneUsageDescription": "Allow app XYZ to access your microphone"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

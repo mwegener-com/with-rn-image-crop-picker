@@ -1,31 +1,39 @@
 {
-	"name": "with-rn-image-crop-picker",
-	"version": "0.2.0",
-	"homepage": "https://github.com/mwegener-com/with-rn-image-crop-picker#readme",
-	"author": "Marius Wegener",
-	"repository": "https://github.com/mwegener-com/with-rn-image-crop-picker.git",
-	"description": "An Expo config plugin for painless setup of `react-native-image-crop-picker`",
-	"bugs": {
-		"url": "https://github.com/mwegener-com/with-rn-image-crop-picker/issues"
-	},
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/"
-	},
-	"license": "MIT",
-	"private": false,
-	"main": "app.plugin.js",
-	"devDependencies": {
-		"expo-module-scripts": "^2.0.0"
-	},
-	"dependencies": {
-		"@expo/config-plugins": "^3.0.6"
-	},
-	"scripts": {
-		"build": "expo-module build",
-		"clean": "expo-module clean",
-		"test": "expo-module test",
-		"prepare": "expo-module prepare",
-		"prepublishOnly": "expo-module prepublishOnly",
-		"expo-module": "expo-module"
-	}
+  "name": "@luccasr73/with-rn-image-crop-picker",
+  "version": "0.1.5",
+  "main": "app.plugin.js",
+  "types": "./plugin/build/index.d.ts",
+  "homepage": "https://github.com/luccasr73/with-rn-image-crop-picker#readme",
+  "repository": "https://github.com/luccasr73/with-rn-image-crop-picker.git",
+  "description": "An Expo config plugin for painless setup of `react-native-image-crop-picker`",
+  "author": "Luccas Robert",
+  "bugs": {
+    "url": "https://github.com/luccasr73/with-rn-image-crop-picker/issues"
+  },
+  "private": false,
+  "scripts": {
+    "build": "npm_config_user_agent=yarn expo-module build plugin",
+    "clean": "npm_config_user_agent=yarn expo-module clean plugin",
+    "test": "npm_config_user_agent=yarn expo-module test plugin",
+    "prepare": "npm run clean & npm run build",
+    "prepublishOnly": "npm_config_user_agent=yarn expo-module prepublishOnly",
+    "expo-module": "npm_config_user_agent=yarn expo-module"
+  },
+  "keywords": [
+    "expo",
+    "react-native"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "expo": "^51.0.38",
+    "expo-module-scripts": "^3.5.2"
+  },
+  "peerDependencies": {
+    "expo": ">=51.0.0"
+  },
+  "peerDependenciesMeta": {
+    "expo": {
+      "optional": true
+    }
+  }
 }
